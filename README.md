@@ -2,9 +2,9 @@
 A versatile, modular, and performant approach to tweening.
 
 # Table of Contents
-- [📕 About Motion](https://github.com/useraoli/Motion/edit/main/README.md#-about-motion)
-- [📝 Features](https://github.com/useraoli/Motion/edit/main/README.md#-features)
-- [🎥 Examples](https://github.com/useraoli/Motion/edit/main/README.md#-examples)
+- [📕 About Motion](https://github.com/useraoli/Motion/tree/main?tab=readme-ov-file#-about-motion)
+- [📝 Features](https://github.com/useraoli/Motion/tree/main?tab=readme-ov-file#-features)
+- [🎥 Examples](https://github.com/useraoli/Motion/tree/main?tab=readme-ov-file#-examples)
 - [✏️ Documentation](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md)
 
 # 📕 About Motion
