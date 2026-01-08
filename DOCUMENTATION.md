@@ -170,7 +170,7 @@ Increasing the motion’s duration above 1, or changing ```playback_speed``` str
 ## Code Samples
 ### Instancing a curve
 
-In this example, we will be creating four different curves. ```Ease-in```, ```ease-out```, ```ease-in-out```, and ```ease-out-in```.
+In this example, we will be creating four different curves. [```Ease-in↗```](https://cubic-bezier.com/#.76,.32,.76,.32), [```ease out↗```](https://cubic-bezier.com/#.15,1,.07,1), [```ease-in-out↗```](https://cubic-bezier.com/#.93,.24,.19,.92), and [```ease-out-In↗```](https://cubic-bezier.com/#{.32,.86,.69,.17).
 
 ```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -184,24 +184,6 @@ Motion:createCurve("ease_out", {.15, 1, .07, 1})
 Motion:createCurve("ease_in_out", {.93, .24, .19, .92}, .5) -- We can change the accuracy!
 Motion:createCurve("ease_out_in", {.32, .86, .69, .17}, 1) -- Super accurate animations
 ```
-
-<details><summary>Easing curves used in the code example.</summary>
-
-<div align="center">
-
-# Ease In
-<img width="1919" height="1079" alt="Ease In" src="https://github.com/user-attachments/assets/18ae71f6-77e7-4a20-b4f1-94ade399e2ef" />
-
-# Ease Out
-<img width="1919" height="1079" alt="Ease Out" src="https://github.com/user-attachments/assets/03e94e80-3253-42a7-87a5-850385f09a90" />
-
-# Ease In-Out
-<img width="1919" height="1079" alt="Ease In-Out" src="https://github.com/user-attachments/assets/2162aec1-523e-4ede-a371-daed3698fd6c" />
-
-# Ease Out-In
-<img width="1919" height="1079" alt="Ease Out-In" src="https://github.com/user-attachments/assets/ab732125-6e3e-4327-a816-e35fa33c204e" />
-</details>
-</div>
 
 ---
 
