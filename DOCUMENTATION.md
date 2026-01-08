@@ -1,4 +1,4 @@
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/56679655-906c-4e00-9530-8ca3e4256978" /># Documentation ✏️
+# Documentation ✏️
 <img width="1920" height="480" alt="Motion Logo Blur" src="https://github.com/user-attachments/assets/8f27a517-49b4-4610-a828-053a275c716a" />
 
 ---
