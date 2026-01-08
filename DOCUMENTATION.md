@@ -39,14 +39,11 @@
 # Motion
 Used to create and manage [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) objects to interpolate instance properties.
 
-## Summary
-
-Interpolation works ONLY on objects with the compatible property types, including:
+Interpolation currently works ONLY on objects with the compatible property types, including:
 
 - [number](https://create.roblox.com/docs/luau/numbers)
 - [Vector2](https://create.roblox.com/docs/reference/engine/datatypes/Vector2)
 - [Vector3](https://create.roblox.com/docs/reference/engine/datatypes/Vector3)
-- [UDim](https://create.roblox.com/docs/reference/engine/datatypes/UDim)
 - [UDim2](https://create.roblox.com/docs/reference/engine/datatypes/UDim2)
 - [CFrame](https://create.roblox.com/docs/reference/engine/datatypes/CFrame)
 - [Color3](https://create.roblox.com/docs/reference/engine/datatypes/Color3)
@@ -174,7 +171,11 @@ Increasing the motion’s duration above 1, or changing ```playback_speed``` str
 ### Code Samples
 #### 1. Instancing a curve
 
-In this example, we will be creating four different curves. [```Ease-in↗```](https://cubic-bezier.com/#.76,.32,.76,.32), [```ease out↗```](https://cubic-bezier.com/#.15,1,.07,1), [```ease-in-out↗```](https://cubic-bezier.com/#.93,.24,.19,.92), and [```ease-out-In↗```](https://cubic-bezier.com/#{.32,.86,.69,.17).
+In this example, we will be creating four different curves.
+- [```Ease-In↗```](https://cubic-bezier.com/#.76,.32,.76,.32)
+- [```Ease-Out↗```](https://cubic-bezier.com/#.15,1,.07,1)
+- [```Ease-In-Out↗```](https://cubic-bezier.com/#.93,.24,.19,.92)
+- [```Ease-Out-In↗```](https://cubic-bezier.com/#{.32,.86,.69,.17)
 
 ```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -192,30 +193,101 @@ Motion:createCurve("ease_out_in", {.32, .86, .69, .17}, 1) -- Super accurate ani
 ---
 
 ### .setUpdatePriority()
+
+- Changes the internal [RunService](https://create.roblox.com/docs/reference/engine/classes/RunService) update method.
+
 ```lua
 Motion.setUpdatePriority(priority: number) : ()
 ```
 
 ---
 
+| Parameters          | Description                                                                                       |
+| ------------------- | ------------------------------------------------------------------------------------------------- |
+| priority: [number](https://create.roblox.com/docs/luau/numbers) | Decides which RunService update signal it should use. |
+
+| Returns |
+| ------- |
+| None    |
+
+---
+
+The method allows the user to change what [RunService](https://create.roblox.com/docs/reference/engine/classes/RunService) signal method it should use. At default the ```update_priority``` is set to the first one.
+
+The following are the valid indices for each update type.
+1. [```RunService.RenderStepped```](https://create.roblox.com/docs/reference/engine/classes/RunService#RenderStepped)
+2. [```RunService.PreRender```](https://create.roblox.com/docs/reference/engine/classes/RunService#PreRender)
+3. [```RunService.PreAnimation```](https://create.roblox.com/docs/reference/engine/classes/RunService#PreAnimation)
+4. [```RunService.Stepped```](https://create.roblox.com/docs/reference/engine/classes/RunService#Stepped)
+5. [```RunService.PreSimulation```](https://create.roblox.com/docs/reference/engine/classes/RunService#PreSimulation)
+6. [```RunService.Heartbeat```](https://create.roblox.com/docs/reference/engine/classes/RunService#Heartbeat)
+7. [```RunService.PostSimulation```](https://create.roblox.com/docs/reference/engine/classes/RunService#PostSimulation)
+
+---
+
 ### .setCurveAccuracy()
+
+- Description
+
 ```lua
 Motion.setCurveAccuracy(accuracy: number) : ()
 ```
 
 ---
 
+| Parameters          | Description                                                                                   |
+| ------------------- | --------------------------------------------------------------------------------------------- |
+| accuracy: [number](https://create.roblox.com/docs/luau/numbers) | Controls how many points the curve will generate. |
+
+| Returns |
+| ------- |
+| None    |
+
+---
+
+---
+
 ### .independentUpdate()
+
+- Determines whether the system updates should be handled manually ```true``` or automatically ```false```.
+
 ```lua
 Motion.independentUpdate(enabled: boolean) : ()
 ```
 
 ---
 
+| Parameters          | Description                                                                                 |
+| ------------------- | ------------------------------------------------------------------------------------------- |
+| enabled: [boolean](https://create.roblox.com/docs/luau/booleans) | Switches the automatic system update on or off. |
+
+| Returns |
+| ------- |
+| None    |
+
+---
+
+---
+
 ### .updateSignal()
+
+- Description
+
 ```lua
 Motion.updateSignal(deltaTime: number) : ()
 ```
+
+---
+
+| Parameters          | Description                                                                   |
+| ------------------- | ----------------------------------------------------------------------------- |
+| deltaTime: [number](https://create.roblox.com/docs/luau/numbers) | The time interval for the logic. |
+
+| Returns |
+| ------- |
+| None    |
+
+---
 
 ---
 
