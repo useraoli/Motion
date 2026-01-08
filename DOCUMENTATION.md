@@ -162,7 +162,7 @@ Motion:createCurve(name: string, curve: {number}, accuracy: number?) : ()
 
 The function initiates a curve which is stored internally. To design the curve, [cubic-bezier.com↗](cubic-bezier.com), written by [Lea Verou](https://lea.verou.me/projects/), is recommended to preview and create your own custom curves to import it onto the library.
 
-The accuracy parameter accepts floats from <ins>0–1</ins>, where <ins>0</ins> generates 60 points per curve and <ins>1</ins> generates 240.
+The accuracy parameter accepts floats from <ins>0–1</ins>, where <ins>0</ins> generates **60** points per curve and <ins>1</ins> generates **240**.
 
 Increasing the motion’s duration above 1, or changing ```playback_speed``` stretches the curve, but does not generate additional points. By default, curve accuracy is set to 60 unless overridden using [```.setCurveAccuracy()```]() or by modifying the parameter directly.
 
@@ -227,7 +227,7 @@ The following are the valid indices for each update type.
 
 ### .setCurveAccuracy()
 
-- Description
+- Changes the default accuracy for the curve generation
 
 ```lua
 Motion.setCurveAccuracy(accuracy: number) : ()
@@ -245,6 +245,15 @@ Motion.setCurveAccuracy(accuracy: number) : ()
 
 ---
 
+The method handles how accurate the curve should be generated. While the default value for this is <ins>0</ins>, the user may change the accuracy between the range of <ins>0-1</ins>. With <ins>0</ins> being **60** points for the curve, and <ins>1</ins> being **240**.
+
+| Range             | Memory Usage      | Benefits                        | Drawbacks                       |
+| ----------------- | ----------------- | ------------------------------- | ------------------------------- |
+| Lower : 0 - 0.5   | 2.32 KB - 5.70 KB | Conserves more memory.          | Noticable "chops" in animation. |
+| High ...: 0.6 - 1 | 6.67 KB - 9.34 KB | Fluid and smooth animation.     | Consumes more memory.           |
+
+It is recommended to keep this number as low as possible for the least amount of memory consumption.
+
 ---
 
 ### .independentUpdate()
@@ -257,8 +266,8 @@ Motion.independentUpdate(enabled: boolean) : ()
 
 ---
 
-| Parameters          | Description                                                                                 |
-| ------------------- | ------------------------------------------------------------------------------------------- |
+| Parameters          | Description                                                                                  |
+| ------------------- | -------------------------------------------------------------------------------------------- |
 | enabled: [boolean](https://create.roblox.com/docs/luau/booleans) | Switches the automatic system update on or off. |
 
 | Returns |
