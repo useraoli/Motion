@@ -185,12 +185,23 @@ Motion:createCurve("ease_in_out", {.93, .24, .19, .92}, .5) -- We can change the
 Motion:createCurve("ease_out_in", {.32, .86, .69, .17}, 1) -- Super accurate animations
 ```
 
-### Curves used:
-<img width="1919" height="1079" alt="Ease In" src="https://github.com/user-attachments/assets/18ae71f6-77e7-4a20-b4f1-94ade399e2ef" />
-<img width="1919" height="1079" alt="Ease Out" src="https://github.com/user-attachments/assets/03e94e80-3253-42a7-87a5-850385f09a90" />
-<img width="1919" height="1079" alt="Ease In-Out" src="https://github.com/user-attachments/assets/2162aec1-523e-4ede-a371-daed3698fd6c" />
-<img width="1919" height="1079" alt="Ease Out-In" src="https://github.com/user-attachments/assets/ab732125-6e3e-4327-a816-e35fa33c204e" />
+<details><summary>Easing curves used in the code example.</summary>
 
+<div align="center">
+
+# Ease In
+<img width="1919" height="1079" alt="Ease In" src="https://github.com/user-attachments/assets/18ae71f6-77e7-4a20-b4f1-94ade399e2ef" />
+
+# Ease Out
+<img width="1919" height="1079" alt="Ease Out" src="https://github.com/user-attachments/assets/03e94e80-3253-42a7-87a5-850385f09a90" />
+
+# Ease In-Out
+<img width="1919" height="1079" alt="Ease In-Out" src="https://github.com/user-attachments/assets/2162aec1-523e-4ede-a371-daed3698fd6c" />
+
+# Ease Out-In
+<img width="1919" height="1079" alt="Ease Out-In" src="https://github.com/user-attachments/assets/ab732125-6e3e-4327-a816-e35fa33c204e" />
+</details>
+</div>
 
 ---
 
