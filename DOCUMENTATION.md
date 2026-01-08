@@ -1,4 +1,5 @@
 # Documentation ✏️
+<img width="1920" height="480" alt="Motion Logo Small" src="https://github.com/user-attachments/assets/20653ef1-dc0e-4124-a0fb-a8554fd18887" />
 
 ---
 
@@ -33,7 +34,12 @@
   - [goals](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#goals)
 </details>
 
-# Summary
+---
+
+# Motion
+Used to create and manage [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) objects to interpolate instance properties.
+
+## Summary
 
 Interpolation works ONLY on objects with the compatible property types, including:
 
@@ -45,11 +51,6 @@ Interpolation works ONLY on objects with the compatible property types, includin
 - [CFrame](https://create.roblox.com/docs/reference/engine/datatypes/CFrame)
 - [Color3](https://create.roblox.com/docs/reference/engine/datatypes/Color3)
 
----
-
-# Motion
-Used to create and manage [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) objects to interpolate instance properties.
-
 ## Methods
 
 ### :createMotion()
@@ -60,16 +61,20 @@ Creates a [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATIO
 Motion:createMotion(curve_name: string, duration: number?, focus: Instances?, goals: Dictionary?) : MotionAnim
 ```
 
+---
+
 | Parameters          | Description                                                                                                                      |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | curve_name: [string](https://create.roblox.com/docs/reference/engine/libraries/string) | The name of the curve to be used.                             |
-| duration: [number?](https://create.roblox.com/docs/luau/numbers) | How long the interpolation will take to its target value.                    |
+| duration: [number?](https://create.roblox.com/docs/luau/numbers) | How long the interpolation will take to its target value.                           |
 | focus: [Instances?](https://create.roblox.com/docs/reference/engine/datatypes/Instance) | The desired instances to be interpolated.                    |
 | goals: [Dictionary?](https://create.roblox.com/docs/luau/tables#dictionaries) | The following properties, set to the final values, to be interpolated. |
 
 | Returns                                                                                |
 | -------------------------------------------------------------------------------------- |
 | [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) |
+
+---
 
 The constructor initiates a new [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) object. To create one, Motion will require four arguments: the curve to use, the duration of the motion, the instances to be interpolated, and a dictionary containing the properties assigned with its target values.
 
