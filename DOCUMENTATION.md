@@ -55,7 +55,7 @@ Interpolation works ONLY on objects with the compatible property types, includin
 
 ### :createMotion()
 
-Creates a [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) object with the properties to be interpolated.
+- Creates a [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) object with the properties to be interpolated.
 
 ```lua
 Motion:createMotion(curve_name: string, duration: number?, focus: Instances?, goals: Dictionary?) : MotionAnim
@@ -83,8 +83,10 @@ Like [TweenService](https://create.roblox.com/docs/reference/engine/classes/Twee
 
 The resulting [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) is its own individual object, but unlike the [Tween](https://create.roblox.com/docs/reference/engine/classes/Tween), it can be reused and its public properties are interchangeable.
 
-## Code Samples
-### Creating a MotionAnim object
+---
+
+### Code Samples
+#### 1. Creating a MotionAnim object
 
 In this example, we will be interpolating an instance's current transparency and position to a new one.
 
@@ -108,7 +110,7 @@ local MotionAnim = Motion:createMotion("curve_name", 1, instance, {
 MotionAnim:start(60, 1)
 ```
 
-### Changing the properties of a MotionAnim object
+#### 2. Changing the properties of a MotionAnim object
 Properties may also be applied after the creation of the MotionAnim object. So these instances are reusable, manageable, and organized. Creating different, individual, tweens for unique properties is no longer necessary.
 
 ```lua
@@ -141,7 +143,7 @@ MotionAnim:start(60, 1)
 
 ### :createCurve()
 
-It creates a curve to use for a [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) instance.
+- It creates a curve to use for a [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) instance.
 
 ```lua
 Motion:createCurve(name: string, curve: {number}, accuracy: number?) : ()
@@ -167,8 +169,10 @@ The accuracy parameter accepts floats from <ins>0–1</ins>, where <ins>0</ins> 
 
 Increasing the motion’s duration above 1, or changing ```playback_speed``` stretches the curve, but does not generate additional points. By default, curve accuracy is set to 60 unless overridden using [```.setCurveAccuracy()```]() or by modifying the parameter directly.
 
-## Code Samples
-### Instancing a curve
+---
+
+### Code Samples
+#### 1. Instancing a curve
 
 In this example, we will be creating four different curves. [```Ease-in↗```](https://cubic-bezier.com/#.76,.32,.76,.32), [```ease out↗```](https://cubic-bezier.com/#.15,1,.07,1), [```ease-in-out↗```](https://cubic-bezier.com/#.93,.24,.19,.92), and [```ease-out-In↗```](https://cubic-bezier.com/#{.32,.86,.69,.17).
 
