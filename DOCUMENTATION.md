@@ -227,7 +227,7 @@ The following are the valid indices for each update type.
 
 ### .setCurveAccuracy()
 
-- Changes the default accuracy for the curve generation
+- Changes the default accuracy for the curve generation.
 
 ```lua
 Motion.setCurveAccuracy(accuracy: number) : ()
@@ -249,8 +249,8 @@ The method handles how accurate the curve should be generated. While the default
 
 | Range             | Memory Usage      | Benefits                        | Drawbacks                       |
 | ----------------- | ----------------- | ------------------------------- | ------------------------------- |
-| Lower : 0 - 0.5   | 2.32 KB - 5.70 KB | Conserves more memory.          | Noticable "chops" in animation. |
-| High ...: 0.6 - 1 | 6.67 KB - 9.34 KB | Fluid and smooth animation.     | Consumes more memory.           |
+| Lower : 0 - 0.5   | 0.31 KB - 0.76 KB | Conserves more memory.          | Noticable "chops" in animation. |
+| High ...: 0.6 - 1 | 0.85 KB - 1.21 KB | Fluid and smooth animation.     | Consumes more memory.           |
 
 It is recommended to keep this number as low as possible for the least amount of memory consumption.
 
