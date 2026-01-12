@@ -7,10 +7,6 @@ function CurveHandler.bakeCurve(curve_name: string, curve: {}, accuracy: number)
 	CurveHandler.curves[curve_name] = baked_curve
 end
 
-function CurveHandler.remCurve(curve_name: string)
-	CurveHandler.curves[curve_name] = nil
-end
-
 function generateBezierCurve(curve: {}, accuracy: number)
 	local measure, inverse_acc = getBezierIncrements(accuracy)
 	return iterateBezierPoints(measure, inverse_acc, curve, {Vector2.zero})
@@ -49,3 +45,4 @@ function getBezierValue(p0: number, p1: number, t: number)
 end
 
 return CurveHandler
+
