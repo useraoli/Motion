@@ -8,9 +8,9 @@
 <details>
 <summary>🏃‍♂️ Motion</summary>
 
-- [Description](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motion)
-- [Defaults](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#defaults)
-- [Methods](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#methods)
+- [Description](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#%E2%80%8D%EF%B8%8F-motion)
+- [Defaults](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#-defaults)
+- [Methods](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#%EF%B8%8F-methods)
   - [:createMotion()](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#createmotion)
   - [:createCurve()](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#createcurve)
   - [.setUpdatePriority()](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#setupdatepriority)
@@ -22,14 +22,14 @@
 <details>
 <summary>💨 MotionAnim</summary>
 
-- [Description](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim)
-- [Error Cases](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#error-cases)
-- [Defaults](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#defaults-1)
-- [Methods](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#methods-1)
+- [Description](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#-motionanim)
+- [Error Cases](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#-error-cases)
+- [Defaults](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#-defaults-1)
+- [Methods](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#%EF%B8%8F-methods-1)
   - [:start()](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#start)
   - [:stop()](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#stop)
   - [:update()](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#update)
-- [Properties](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#properties)
+- [Properties](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#%EF%B8%8F-properties)
   - [duration](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#duration)
   - [focus](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#focus)
   - [framerate](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#framerate)
@@ -49,7 +49,7 @@
 ---
 
 # 🏃‍♂️ Motion
-Used to create and manage [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) objects to interpolate instance properties.
+Used to create and manage [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#-motionanim) objects to interpolate instance properties.
 
 Interpolation currently works ONLY on objects with the compatible property types, including:
 
@@ -69,7 +69,7 @@ Interpolation currently works ONLY on objects with the compatible property types
 
 ### :createMotion()
 
-- Creates a [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) object with the properties to be interpolated.
+- Creates a [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#-motionanim) object with the properties to be interpolated.
 
 ```lua
 Motion:createMotion(curve_name: string, duration: number?, focus: Instance | {Instance}?, goals: Dictionary?) : MotionAnim
@@ -86,16 +86,16 @@ Motion:createMotion(curve_name: string, duration: number?, focus: Instance | {In
 
 | Returns                                                                                |
 | -------------------------------------------------------------------------------------- |
-| [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) |
+| [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#-motionanim) |
 
 ---
 
-The constructor initiates a new [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) object. To create one, a MotionAnim instance will require four arguments:
+The constructor initiates a new [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#-motionanim) object. To create one, a MotionAnim instance will require four arguments:
 the curve to use, the duration of the MotionAnim, the instances to be interpolated, and a dictionary containing the properties assigned with its target values.
 
 Like [TweenService](https://create.roblox.com/docs/reference/engine/classes/TweenService#Create), the ```goals``` table is similar to the ```propertyTable```, where it needs to be a dictionary with the keys being the desired properties to interpolate, and the value of each key being the final target values of the MotionAnim.
 
-The resulting [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) is its own individual object, but unlike the [Tween](https://create.roblox.com/docs/reference/engine/classes/Tween), it can be reused and its public properties are interchangeable.
+The resulting [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#-motionanim) is its own individual object, but unlike the [Tween](https://create.roblox.com/docs/reference/engine/classes/Tween), it can be reused and its public properties are interchangeable.
 
 ---
 
@@ -157,7 +157,7 @@ MotionAnim:start(60, 1)
 
 ### :createCurve()
 
-- It creates a curve to use for a [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#motionanim) instance.
+- It creates a curve to use for a [MotionAnim](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#-motionanim) instance.
 
 ```lua
 Motion:createCurve(name: string, curve: {number}, accuracy: number?) : ()
@@ -475,3 +475,4 @@ MotionAnim.time_position: number
 ```
 
 The value determining where the MotionAnim is currently at ranging from 0 to its [duration](https://github.com/useraoli/Motion/blob/main/DOCUMENTATION.md#duration).
+
