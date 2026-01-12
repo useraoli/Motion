@@ -1,5 +1,5 @@
 # Motion 🏃‍♂️
-<img width="1920" height="480" alt="Motion Logo Small" src="https://github.com/user-attachments/assets/aa025e0c-cd16-4930-bc26-2847ca95e0ca" />
+<img width="1920" height="480" alt="Motion Logo Blur" src="https://github.com/user-attachments/assets/60b1bef9-c7ba-4bb8-881e-32b63984ad29" />
 A versatile, modular, and performant approach to tweening.
 
 # Table of Contents
